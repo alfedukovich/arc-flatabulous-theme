@@ -1,5 +1,5 @@
 # Arc-Flatabulous Theme
-Arc-Flatabulous theme is the [Arc](https://github.com/horst3180/arc-theme) theme with [Flatabulous](https://github.com/anmoljagetia/Flatabulous) window controls.
+Arc-Flatabulous theme is the [Arc](https://github.com/arc-design/arc-theme) theme with [Flatabulous](https://github.com/anmoljagetia/Flatabulous) window controls.
 
 ### Arc-Flatabulous is available in three variants 
 
@@ -142,5 +142,5 @@ If you find a bug, please report it at https://github.com/andreisergiu98/arc-fla
 
 ### Credits
 * **[horst3180](https://github.com/horst3180)** for creating the [Arc](https://github.com/horst3180/arc-theme) theme.
-* **[NicoHood](https://github.com/NicoHood)** and **[fossfreedom](https://github.com/fossfreedom)** for maintaining [Arc](https://github.com/NicoHood/arc-theme).
+* **[NicoHood](https://github.com/NicoHood)** and **[fossfreedom](https://github.com/fossfreedom)** for maintaining [Arc](https://github.com/arc-design/arc-theme).
 * **[Anmol Jagetia](https://github.com/anmoljagetia)** for creating the [Flatabulous](https://github.com/anmoljagetia/Flatabulous) theme.
