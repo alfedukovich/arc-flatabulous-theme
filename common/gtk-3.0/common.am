@@ -30,12 +30,20 @@ endif
 else
 
 $(normal): $(srcdir)/assets.svg | assets
+if INKSCAPE_1_0_OR_NEWER
+	$(INKSCAPE) --export-id-only --export-filename="$@" --export-id="$(basename $(notdir $@))" --export-dpi=96 "$<" >/dev/null
+else !INKSCAPE_1_0_OR_NEWER
 	$(INKSCAPE) --export-id-only --export-png="$@" --export-id="$(basename $(notdir $@))" --export-dpi=96 "$<" >/dev/null
+endif
 if OPTIPNG
 	$(OPTIPNG) -o7 --quiet "$@"
 endif
 $(hidpi): $(srcdir)/assets.svg | assets
+if INKSCAPE_1_0_OR_NEWER
+	$(INKSCAPE) --export-id-only --export-filename="$@" --export-id="$(patsubst %@2,%,$(basename $(notdir $@)))" --export-dpi=192 "$<" >/dev/null
+else !INKSCAPE_1_0_OR_NEWER
 	$(INKSCAPE) --export-id-only --export-png="$@" --export-id="$(patsubst %@2,%,$(basename $(notdir $@)))" --export-dpi=192 "$<" >/dev/null
+endif
 if OPTIPNG
 	$(OPTIPNG) -o7 --quiet "$@"
 endif
